@@ -1,7 +1,7 @@
 {
-    "name": "node-prettier-eslint",
+    "name": "t-mobile-auto-reset",
     "version": "1.0.0",
-    "description": "",
+    "description": "This automatically adds MB's to your dataplan with unlimited bundles",
     "main": "src/index.js",
     "scripts": {
         "start": "node .",
@@ -18,7 +18,11 @@
         "eslint-plugin-prettier": "^3.1.4",
         "eslint-plugin-react": "^7.21.5",
         "eslint-plugin-react-hooks": "^4.2.0",
-        "prettier": "2.1.2"
+        "prettier": "2.1.2",
+        "nodemon": "^2.0.7"
     },
-    "dependencies": {}
+    "dependencies": {
+        "chalk": "^4.1.0",
+        "node-fetch": "^2.6.1"
+    }
 }
