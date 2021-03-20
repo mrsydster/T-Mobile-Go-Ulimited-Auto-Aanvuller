@@ -2,8 +2,8 @@ const fetch = require('node-fetch');
 const chalk = require('chalk');
 
 const baseURI = 'https://capi.t-mobile.nl';
-const apiURI = `${baseURI}/xxxxxx/customer/1.xxxxxx/subscription/xxxxxx/roamingbundles`;
-const bearerToken = 'xxxxxx';
+const apiURI = `${baseURI}/xxxxxxxxxxx/customer/1.xxxxxxxxxxx/subscription/xxxxxxxxxxx/roamingbundles`;
+const bearerToken = 'xxxxxxxxxxx';
 
 // Function to request a new (free) bundle
 const requestNewBundle = async () => {
@@ -17,7 +17,7 @@ const requestNewBundle = async () => {
             'Content-Length': '36',
             'Content-Type': 'application/vnd.capi.tmobile.nl.roamingbundles.v3+json; charset=utf-8',
         },
-        body: JSON.stringify({ Bundles: [{ BuyingCode: 'A0DAY' }] }),
+        body: JSON.stringify({ Bundles: [{ BuyingCode: 'A0DAY01' }] }),
     });
 
     if (response.status === 202) {
@@ -75,7 +75,7 @@ const getRemainingMbs = async () => {
 };
 
 // What interval to check api for MB's
-const interval = 60000;
+const interval = 30000;
 
 // Check MB's
 getRemainingMbs();

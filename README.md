@@ -1,6 +1,7 @@
 NOTES:
 
 -   WERKT ALLEEN IN NL!
+-   De bearer token is een maand geldig. Je zult dus iedere maand nog een keer de token moeten sniffen.
 
 INSTALL:
 
