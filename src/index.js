@@ -2,8 +2,8 @@ const fetch = require('node-fetch');
 const chalk = require('chalk');
 
 const baseURI = 'https://capi.t-mobile.nl';
-const apiURI = `${baseURI}/xxxxxxxxxxx/customer/1.xxxxxxxxxxx/subscription/xxxxxxxxxxx/roamingbundles`;
-const bearerToken = 'xxxxxxxxxxx';
+const apiURI = `${baseURI}/XXXXXXXXXXX/customer/1.XXXXXXXXXXX/subscription/XXXXXXXXXXX/roamingbundles`; // Example request /b11edc152f80/customer/1.17962238/subscription/31642349923/roamingbundles
+const bearerToken = 'XXXXXXXXXXX'; // Example Bearer token 1d8dafa7d74f19eedbed79c77582dde2
 
 // Function to request a new (free) bundle
 const requestNewBundle = async () => {
